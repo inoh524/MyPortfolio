@@ -1,12 +1,12 @@
 export default function About() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
+    <div className="max-w-4xl mx-auto mt-15 px-6 py-12 border border-[#00fffb] rounded-2xl shadow-lg p-">
 
-      <h1 className="text-4xl font-bold text-[#ffffff]">
+      <h1 className="text-4xl font-bold flex justify-center text-[#ffffff]">
         About This Project
       </h1>
 
-      <p className="mt-4 text-[#cacaca] leading-7">
+      <p className="mt-4 text-[#cacaca] leading-7 text-center">
         This project is built to practice full-stack web development using a
         modern JavaScript stack. The goal is to create a responsive and scalable
         web application while learning both frontend and backend development.
@@ -14,7 +14,7 @@ export default function About() {
 
       <div className="grid md:grid-cols-2 gap-6 mt-10">
 
-        <div className="bg-[#000000] rounded-xl shadow-md p-6">
+        <div className="bg-[#022534] rounded-xl p-6 hover:border-cyan-400 border border-transparent transition">
           <h2 className="text-2xl text-[#00fffb] font-semibold mb-3">
             Frontend
           </h2>
@@ -28,7 +28,7 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="bg-[#000000] rounded-xl shadow-md p-6">
+        <div className="bg-[#022534] rounded-xl p-6 hover:border-cyan-400 border border-transparent transition">
           <h2 className="text-2xl text-[#00fffb] font-semibold mb-3">
             Backend
           </h2>

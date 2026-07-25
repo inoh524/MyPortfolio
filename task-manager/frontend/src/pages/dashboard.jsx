@@ -11,10 +11,13 @@ function Dashboard(){
         <section className="flex justify-center relative z-10 overflow-hidden items-center">
           <div className="">
             <div>
+              <h1 className="text-[#00fffb] text-4xl font-mono ">
+                Hello, I'm
+              </h1>
               <h1 className="text-white text-7xl font-mono font-bold">
                 MARCELINO
               </h1>
-              <h2 className="text-white text-5xl font-">
+              <h2 className="text-white text-5xl font-bold">
                 SUSANO
               </h2>
             </div>
@@ -24,10 +27,13 @@ function Dashboard(){
           </div>
           <div>
             <div>
+              <h1 className="text-[#00fffb] text-4xl font-mono  ">
+                Aspiring
+              </h1>
               <h1 className="text-white text-7xl font-mono font-bold">
                 WEB <span className="text-[#00fffb]">UI/UX</span>
               </h1>
-              <h2 className="text-white text-6xl font-mono font-bold">
+              <h2 className="text-white text-5xl font-mono font-bold">
                 DESIGNER
               </h2>
             </div>

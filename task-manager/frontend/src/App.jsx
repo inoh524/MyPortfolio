@@ -8,7 +8,9 @@ import Users from "./pages/services";
 import LoginForm from "./pages/login";
 import UserForm from "./pages/signup";
 import Contact from "./pages/contact";
+import Project_page from "./pages/projects";
 import ProtectedRoute from "./Components/protected_route";
+import Experience_page from "./pages/experience";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Users />} />
+        <Route path="/projects" element={<Project_page />} />
+        <Route path="/experience" element={<Experience_page/>} />
         <Route path="/register" element={<UserForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route element={<ProtectedRoute />}>

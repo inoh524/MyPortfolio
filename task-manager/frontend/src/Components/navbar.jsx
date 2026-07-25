@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { getMe } from "../api/user_api";
+import { useRef } from "react";
 
 function Navbar() {
+    const handleExperienceClick = () => {
+        navigate("/#experience");
+    };
+    const handleProjectClick = () => {
+        navigate("/#project");
+    };
     const [token, setToken] = useState(sessionStorage.getItem("token"));
     const [activeModal, setActiveModal] = useState(null);
     const navigate = useNavigate();
@@ -36,7 +43,7 @@ function Navbar() {
 
     useEffect(() => { //this updates the token state whenever the auth-change event is triggered, ensuring that the Navbar reflects the current authentication status.
         const updateToken = () => {
-            setToken(sessionStorage.getItem("token"));
+            setToken(localStorage.getItem("token"));
         };
         window.addEventListener("auth-change", updateToken);
         return () => {
@@ -47,7 +54,7 @@ function Navbar() {
     return (
         <div className=" bg-[#01161f] flex justify-center items-center px-60 gap-110"> {/* upper part */}
             <div className="px-4 md:px-10 lg:px-10 py-6">
-                <a href="/dashboard" className="relative flex font-mono font-bold text-4xl text-white hover:text-[#00fffb] 
+                <a href="/" className="relative flex font-mono font-bold text-4xl text-white hover:text-[#00fffb] 
                 after:absolute
                 after:left-0
                 after:-bottom-1
@@ -57,7 +64,7 @@ function Navbar() {
                 after:transition-all
                 after:duration-300
                 hover:after:w-full
-                cursor-pointer">
+                cursor-pointer" >
                     Portfolio <a className="text-[#00fffb]">/</a>
                 </a>
             </div>
@@ -80,7 +87,23 @@ function Navbar() {
                     About
                 </a>
 
-                <a href="/services" className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                <a onClick={handleExperienceClick}
+                    className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                    after:absolute
+                    after:left-0
+                    after:-bottom-1
+                    after:h-0.5
+                    after:w-0
+                  after:bg-[#00fffb]
+                    after:transition-all
+                    after:duration-300
+                    hover:after:w-full
+                    cursor-pointer">
+                    Experience
+                </a>
+
+                <a onClick={handleProjectClick}
+                    className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1

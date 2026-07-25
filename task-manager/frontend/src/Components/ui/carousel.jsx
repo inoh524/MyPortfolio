@@ -64,7 +64,7 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api) return
-    // onSelect(api)
+    onSelect(api)
     api.on("reInit", onSelect)
     api.on("select", onSelect)
 
@@ -149,22 +149,29 @@ function CarouselPrevious({
 }) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
+  if (!canScrollPrev) return null
+
   return (
     <Button
       data-slot="carousel-previous"
       variant={variant}
       size={size}
-      className={cn("absolute touch-manipulation rounded-full", orientation === "horizontal"
-        ? "inset-y-0 -left-12 my-auto"
-        : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
-      disabled={!canScrollPrev}
+      className={cn(
+        "absolute touch-manipulation rounded-full",
+        orientation === "horizontal"
+          ? "inset-y-0 -left-12 my-auto"
+          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
       onClick={scrollPrev}
-      {...props}>
+      {...props}
+    >
       <ChevronLeftIcon />
       <span className="sr-only">Previous slide</span>
     </Button>
-  );
+  )
 }
+
 
 function CarouselNext({
   className,
@@ -174,21 +181,28 @@ function CarouselNext({
 }) {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
+  if (!canScrollNext) return null
+
   return (
     <Button
       data-slot="carousel-next"
       variant={variant}
       size={size}
-      className={cn("absolute touch-manipulation rounded-full", orientation === "horizontal"
-        ? "inset-y-0 -right-12 my-auto"
-        : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
-      disabled={!canScrollNext}
+      className={cn(
+        "absolute touch-manipulation rounded-full",
+        orientation === "horizontal"
+          ? "inset-y-0 -right-12 my-auto"
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+        className
+      )}
       onClick={scrollNext}
-      {...props}>
+      {...props}
+    >
       <ChevronRightIcon />
       <span className="sr-only">Next slide</span>
     </Button>
-  );
+  )
 }
+
 
 export { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, useCarousel };

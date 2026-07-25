@@ -38,3 +38,11 @@ model UserAccount{
   created_at    DateTime  @default(now())
   updated_at    DateTime  @updatedAt
 }
+
+model WebsiteEvent {
+  id        Int      @id @default(autoincrement())
+  eventType String
+  page      String?
+  element   String?
+  createdAt DateTime @default(now())
+}

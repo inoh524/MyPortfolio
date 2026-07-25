@@ -21,7 +21,7 @@ function Users() {
   }, []);
 
   return (
-    <div>
+    <div className="text-white">
       <h1>My Profile</h1>
 
       {user && (
