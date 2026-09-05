@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { getMe } from "../api/user_api";
 import { useRef } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
     const handleExperienceClick = () => {
         navigate("/#experience");
     };
@@ -52,9 +54,9 @@ function Navbar() {
     }, []);
 
     return (
-        <div className=" bg-[#01161f] flex justify-center items-center px-60 gap-110"> {/* upper part */}
+        <div className="bg-[#01161f] flex justify-center items-center px-4 gap-4 md:gap-20 lg:gap-32 xl:gap-60"> {/* upper part */}
             <div className="px-4 md:px-10 lg:px-10 py-6">
-                <a href="/" className="relative flex font-mono font-bold text-4xl text-white hover:text-[#00fffb] 
+                <a href="/" className="relative flex font-mono font-bold text-3xl text-white hover:text-[#00fffb] 
                 after:absolute
                 after:left-0
                 after:-bottom-1
@@ -73,7 +75,7 @@ function Navbar() {
             {/*icons color [#00fffb] */}
             <div className="flex gap-12 px-4 md:px-10 lg:px-24 py-20"> {/* nav */}
 
-                <a href="/about" className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                <a href="/about" className="relative text-white text-xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1
@@ -88,7 +90,7 @@ function Navbar() {
                 </a>
 
                 <a onClick={handleExperienceClick}
-                    className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                    className="relative text-white text-xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1
@@ -103,7 +105,7 @@ function Navbar() {
                 </a>
 
                 <a onClick={handleProjectClick}
-                    className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                    className="relative text-white text-xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1
@@ -117,7 +119,7 @@ function Navbar() {
                     Projects
                 </a>
 
-                <a href="/contact" className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                <a href="/contact" className="relative text-white text-xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1
@@ -132,7 +134,7 @@ function Navbar() {
                 </a>
 
                 <div className="relative">
-                    <a className="relative text-white text-2xl font-mono font-light hover:text-[#00fffb] 
+                    <a className="relative text-white text-xl font-mono font-light hover:text-[#00fffb] 
                     after:absolute
                     after:left-0
                     after:-bottom-1

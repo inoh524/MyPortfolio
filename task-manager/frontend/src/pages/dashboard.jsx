@@ -35,7 +35,7 @@ function Dashboard(){
               </h1>
               <h2 className="text-white text-5xl font-mono font-bold">
                 DESIGNER
-              </h2>
+              </h2> 
             </div>
           </div>
         </section>

@@ -72,7 +72,7 @@ function Landing_page() {
   const navigate = useNavigate();
   return (
     <main>
-      <section className="flex justify-center pt-30">
+      <section className="flex justify-center pt-20">
         <div className="">
           {/* text */}
           <div className="font-mono text-white">
@@ -84,20 +84,20 @@ function Landing_page() {
         </div>
       </section>
 
-      <section className="flex justify-center relative z-10 overflow-hidden items-center mb-40">
+      <section className="flex justify-center relative z-10 overflow-hidden items-center mb-30">
         <div className="">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}>
-            <h1 className="text-[#00fffb] text-4xl font-mono ">
+            <h1 className="text-[#00fffb] text-3xl font-mono ">
               Hello, I'm
             </h1>
-            <h1 className="text-white text-7xl font-mono font-bold">
+            <h1 className="text-white text-6xl font-mono font-bold">
               MARCELINO
             </h1>
-            <h2 className="text-white text-5xl font-bold">
+            <h2 className="text-white text-4xl font-bold">
               SUSANO
             </h2>
           </motion.div>
@@ -115,13 +115,13 @@ function Landing_page() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}>
-            <h1 className="text-[#00fffb] text-4xl font-mono  ">
+            <h1 className="text-[#00fffb] text-3xl font-mono  ">
               Aspiring
             </h1>
-            <h1 className="text-white text-7xl font-mono font-bold">
+            <h1 className="text-white text-6xl font-mono font-bold">
               WEB <span className="text-[#00fffb]">UI/UX</span>
             </h1>
-            <h2 className="text-white text-5xl font-mono font-bold">
+            <h2 className="text-white text-4xl font-mono font-bold">
               DESIGNER
             </h2>
           </motion.div>
@@ -131,9 +131,9 @@ function Landing_page() {
 
 
       <section className="flex items-center justify-center mb-10">
-        <div className="flex gap-47">
+        <div className="flex gap-15">
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-100 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
               <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">
@@ -157,7 +157,7 @@ function Landing_page() {
           </div>
 
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-100 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
               <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">
@@ -181,7 +181,7 @@ function Landing_page() {
           </div>
 
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-100 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
               <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">

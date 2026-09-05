@@ -29,7 +29,7 @@ function Project_page() {
     return (
         <main>
             <section>
-                <div id="project" className="flex justify-center pt-40 pb-20">
+                <div id="project" className="flex justify-center pt-40">
                     <h1 className="text-white font-mono text-4xl">
                         Projects I have worked with <br />
                         <span className="flex text-xl justify-center">(present-previous)</span>
@@ -125,7 +125,7 @@ function Project_page() {
             </section>
 
             <section>
-                <div id="experience" className="flex justify-center pt-30 text-white font-mono">
+                <div id="experience" className="flex justify-center pt-30 pb-20 text-white font-mono">
                     <h1 className="text-4xl">
                         My Work Experience <br />
                         <span className="text-xl flex justify-center">(academic and non-academic)</span>
