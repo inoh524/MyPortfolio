@@ -13,7 +13,7 @@ export default function MainLayout() {
         <Navbar/>
       </div>
 
-      <main className="relative flex-1 px-30 overflow-hidden">
+      <main className="relative flex-1 px-4 sm:px-8 md:px-16 lg:px-30 overflow-hidden">
         <Outlet />
          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-size-[30px_30px]" />
          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_33%,rgba(0,255,251,0.12),transparent_45%)]"/>

@@ -84,59 +84,63 @@ function Landing_page() {
         </div>
       </section>
 
-      <section className="flex justify-center relative z-10 overflow-hidden items-center mb-30">
-        <div className="">
+      <section className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-4 mb-16 lg:mb-30 text-center lg:text-left px-4">
+        <div className="relative">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}>
-            <h1 className="text-[#00fffb] text-3xl font-mono ">
+
+            <h1 className="text-[#00fffb] text-2xl sm:text-3xl font-mono">
               Hello, I'm
             </h1>
-            <h1 className="text-white text-6xl font-mono font-bold">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-mono font-bold">
               MARCELINO
             </h1>
-            <h2 className="text-white text-4xl font-bold">
+            <h2 className="text-white text-3xl sm:text-4xl font-bold">
               SUSANO
             </h2>
+
           </motion.div>
         </div>
-        <div className="">
+        <div className="relative py-7">
           <motion.img className="w-170" src={image4} alt="me"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }} />
         </div>
-        <div>
+        <div className="relative bottom-30 lg:bottom-0">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}>
-            <h1 className="text-[#00fffb] text-3xl font-mono  ">
+
+            <h1 className="text-[#00fffb] text-2xl sm:text-3xl font-mono">
               Aspiring
             </h1>
-            <h1 className="text-white text-6xl font-mono font-bold">
+            <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-mono font-bold">
               WEB <span className="text-[#00fffb]">UI/UX</span>
             </h1>
-            <h2 className="text-white text-4xl font-mono font-bold">
+            <h2 className="text-white text-3xl sm:text-4xl font-mono font-bold">
               DESIGNER
             </h2>
+
           </motion.div>
         </div>
       </section>
 
 
 
-      <section className="flex items-center justify-center mb-10">
-        <div className="flex gap-15">
+      <section className="flex items-center justify-center mb-10 px-4">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-8 lg:gap-15 justify-center items-center">
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+           <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
-              <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">
+              <div className="absolute inset-0 rounded-xl bg-[#163643] backface-hidden text-white flex flex-col items-center justify-center text-center">
                 <h1 className="text-6xl font-bold">
                   <AnimatedCounter target={4} suffix="" />
                 </h1>
@@ -157,10 +161,10 @@ function Landing_page() {
           </div>
 
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+            <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
-              <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">
+              <div className="absolute inset-0 rounded-xl bg-[#163643] backface-hidden text-white flex flex-col items-center justify-center text-center">
                 <h1 className="text-6xl font-bold">
                   <AnimatedCounter target={2} suffix="+" />
                 </h1>
@@ -181,10 +185,10 @@ function Landing_page() {
           </div>
 
           <div onClick={() => navigate("/projects")} className="group perspective-[1000px]">
-            <div className="relative h-80 w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
+            <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 duration-700 transform-3d group-hover:transform-[rotateY(180deg)] hover:cursor-pointer">
 
               {/* Front */}
-              <div className="absolute text-center inset-0 rounded-xl bg-[#163643] pt-25 backface-hidden text-white">
+              <div className="absolute inset-0 rounded-xl bg-[#163643] backface-hidden text-white flex flex-col items-center justify-center text-center">
                 <h1 className="text-6xl font-bold">
                   <AnimatedCounter target={1} suffix="" />
                 </h1>
@@ -214,7 +218,7 @@ function Landing_page() {
         </div>
       </section>
 
-      <section className="flex items-center justify-center gap-90 mb-50">
+      <section className="flex items-center justify-center mb-16 lg:mb-50">
         <Project_page />
       </section>
 
