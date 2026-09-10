@@ -62,7 +62,7 @@ function Project_page() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="font-mono text-white bg-[#163643] p-5 w-full max-w-[600px] h-max"
+                            className="font-mono text-white p-5 w-full max-w-[600px] h-max"
                         >
                             <h1 className="text-lg sm:text-xl">
                                 A-Rcon:
@@ -129,7 +129,7 @@ function Project_page() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="font-mono text-white bg-[#163643] p-5 w-full max-w-[600px] h-max"
+                            className="font-mono text-white p-5 w-full max-w-[600px] h-max"
                         >
                             <h1 className="text-lg sm:text-xl">
                                 Mobile Version of A-Rcon:
@@ -203,7 +203,7 @@ function Project_page() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="font-mono text-white bg-[#163643] p-5 w-full max-w-[600px] h-max"
+                        className="font-mono text-white p-5 w-full max-w-[600px] h-max"
                     >
                         <h1 className="text-lg sm:text-xl">
                             On-The-Job Training:
