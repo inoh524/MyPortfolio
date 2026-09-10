@@ -1,6 +1,6 @@
 import Content from "@/Components/content";
 import Video from "../Components/Videos.jsx";
-import image4 from "/src/assets/me.png";
+import image4 from "/src/assets/me for icon.png";
 import { CarouselDemo } from "../Components/carousel.jsx";
 
 

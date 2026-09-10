@@ -1,7 +1,7 @@
 import Project_page from "./projects.jsx";
 import Content from "@/Components/content";
 import Video from "../Components/Videos.jsx";
-import image4 from "/src/assets/me.png";
+import image4 from "/src/assets/me for icon.png";
 import { CarouselDemo } from "../Components/carousel.jsx";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
