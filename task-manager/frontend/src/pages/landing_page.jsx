@@ -105,7 +105,7 @@ function Landing_page() {
           </motion.div>
         </div>
         <div className="relative py-7">
-          <motion.img className="w-170" src={image4} alt="me"
+          <motion.img className="w-150" src={image4} alt="me"
             initial={{ opacity: 0, y: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
